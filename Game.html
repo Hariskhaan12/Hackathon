@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balloon Game</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+      <div id="Detail_Section">
+      <h2 id="score_life"> <span id="level">LEVEL : 1</span>   SCORE : 00  <span> LIFE : 3 remaining</span></h2>
+    </div>  
+      
+    <div id="main-heading">
+      <p>Pop the <span id="popcolor"></span> balloon by moving your <br> mouse over them</p>
+      <div id="display">
+          <div id="row_1" class="row">
+           <div class="balloon_1"></div>
+           <div class="balloon_1"></div>
+           <div class="balloon_1"></div>
+           <div class="balloon_1">.</div>
+           <div class="balloon_1">.</div>
+         </div> 
+         
+         <div id="row_2" class="row">
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+         </div>
+         <div id="row_3" class="row">
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+         </div>
+         <div id="row_4" class="row">
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+            <div class="balloon_1"> </div>
+         </div>
+
+      </div>
+    </div>
+    <script src="./firebase.js"></script>   
+     <script src="./app.js"></script>
+  </body>
+</html>

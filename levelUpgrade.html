@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level Upgrade</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .balloon_1 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin: 10px;
+        animation: move 4s infinite;
+        animation-direction: alternate;
+        position: relative;
+      }
+    @keyframes move{
+    0%{
+        left:0px; top:0px
+    }
+    25%{
+        left:200px;top:0px
+    }
+    50%{
+        left:200px;top:100px   
+    }
+    75%{
+        left:0px;top:100px
+    }
+    100%{
+        left:0%;top:0px
+    }
+   
+} 
+ </style>
+    
+  </head>
+  <body>
+    <div id="Detail_Section">
+      <h2 id="score_life">
+        <span id="level">LEVEL : 1</span> SCORE : 00
+        <span> LIFE : 3 remaining</span>
+      </h2>
+    </div>
+
+    <div id="main-heading">
+      <p>
+        Pop the <span id="popcolor"></span> balloon by moving your <br />
+        mouse over them
+      </p>
+      <div id="display">
+        <div id="row_1" class="row">
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1">.</div>
+          <div class="balloon_1">.</div>
+        </div>
+
+        <div id="row_2" class="row">
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+        </div>
+        <div id="row_3" class="row">
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+        </div>
+        <div id="row_4" class="row">
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+          <div class="balloon_1"></div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script>
+        document.getElementById("level").innerHTML="LEVEL : 2"
+    </script>
+    <script src="./firebase.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

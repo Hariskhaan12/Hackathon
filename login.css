@@ -1,0 +1,48 @@
+
+#login ,#SignUp{
+    margin-left: 20%;
+    margin-top: 10%;
+   
+}
+input{
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid rgb(112, 106, 106);
+    padding: 5px;
+    outline-style:none ;
+    width: 400px;
+    
+}
+#name,#em,#password{
+    padding: 10px;
+}
+#email{
+    margin-top: 4%;
+}
+#pass{
+    margin-top: 4%;
+}
+#loginPass,#loginEmail
+{
+    padding: 15px;
+}
+button{
+ padding: 10px;
+ width: 110px;
+ background-color: rgb(5, 112, 253);  
+ color: #ffff;
+ border-color:rgb(5, 112, 253);
+ border-radius: 3px;
+ margin-left: 8rem;
+ margin-top: 4%;
+}
+#pass p>a{
+    color:rgb(216, 17, 223);
+}
+#pass p{
+    font-size: small;
+    
+}
+button:active{
+    transform: scale(0.88);
+}

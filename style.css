@@ -1,0 +1,52 @@
+#main-heading >p{
+    text-align: center;
+    color: purple;
+
+}
+.balloon_1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin:10px ;
+    /* animation: move 4s  infinite;
+    animation-direction: alternate ;
+    position: relative; */
+   
+}
+.row{
+    display: flex;
+    justify-content: center;
+    
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+#level{
+    position: absolute;
+    left: 0%;
+}
+#Detail_Section{
+    display: flex;
+    margin-left: 70%;
+}
+/* 
+@keyframes move{
+    0%{
+        left:0px; top:0px
+    }
+    25%{
+        left:200px;top:0px
+    }
+    50%{
+        left:200px;top:100px   
+    }
+    75%{
+        left:0px;top:100px
+    }
+    100%{
+        left:0%;top:0px
+    }
+   
+}  */
